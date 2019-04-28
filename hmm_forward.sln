@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hmm_forward", "hmm_forward\hmm_forward.vcxproj", "{55E19E06-EA00-4D3B-8F49-61A29DF372EB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hmm_forward_clear", "hmm_forward_clear\hmm_forward_clear.vcxproj", "{A77700CF-F0C0-4187-A2DC-35E70C4D2073}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55E19E06-EA00-4D3B-8F49-61A29DF372EB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{55E19E06-EA00-4D3B-8F49-61A29DF372EB}.Debug|Win32.Build.0 = Debug|Win32
+		{55E19E06-EA00-4D3B-8F49-61A29DF372EB}.Release|Win32.ActiveCfg = Release|Win32
+		{55E19E06-EA00-4D3B-8F49-61A29DF372EB}.Release|Win32.Build.0 = Release|Win32
+		{A77700CF-F0C0-4187-A2DC-35E70C4D2073}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A77700CF-F0C0-4187-A2DC-35E70C4D2073}.Debug|Win32.Build.0 = Debug|Win32
+		{A77700CF-F0C0-4187-A2DC-35E70C4D2073}.Release|Win32.ActiveCfg = Release|Win32
+		{A77700CF-F0C0-4187-A2DC-35E70C4D2073}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
