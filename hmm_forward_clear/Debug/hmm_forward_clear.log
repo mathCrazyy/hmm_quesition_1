@@ -1,7 +1,7 @@
-﻿Build started 2019/4/24 19:10:29.
+﻿Build started 2019/4/29 18:03:20.
      1>Project "D:\project\cpp\hmm_forward\hmm_forward_clear\hmm_forward_clear.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\worksoftw\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         D:\worksoftw\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt basic.cpp main.cpp
          main.cpp
      1>d:\project\cpp\hmm_forward\hmm_forward_clear\main.cpp(30): warning C4305: 'initializing' : truncation from 'double' to 'float'
      1>d:\project\cpp\hmm_forward\hmm_forward_clear\main.cpp(46): warning C4305: 'initializing' : truncation from 'double' to 'float'
@@ -10,7 +10,24 @@
      1>d:\project\cpp\hmm_forward\hmm_forward_clear\main.cpp(59): warning C4305: 'initializing' : truncation from 'double' to 'float'
      1>d:\project\cpp\hmm_forward\hmm_forward_clear\main.cpp(60): warning C4018: '<' : signed/unsigned mismatch
      1>d:\project\cpp\hmm_forward\hmm_forward_clear\main.cpp(61): warning C4018: '<' : signed/unsigned mismatch
-     1>d:\project\cpp\hmm_forward\hmm_forward_clear\main.cpp(86): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\project\cpp\hmm_forward\hmm_forward_clear\main.cpp(85): warning C4018: '<' : signed/unsigned mismatch
+         basic.cpp
+     1>d:\project\cpp\hmm_forward\hmm_forward_clear\basic.cpp(12): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\project\cpp\hmm_forward\hmm_forward_clear\basic.cpp(19): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\project\cpp\hmm_forward\hmm_forward_clear\basic.cpp(29): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\project\cpp\hmm_forward\hmm_forward_clear\basic.cpp(51): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\project\cpp\hmm_forward\hmm_forward_clear\basic.cpp(61): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\project\cpp\hmm_forward\hmm_forward_clear\basic.cpp(63): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\project\cpp\hmm_forward\hmm_forward_clear\basic.cpp(89): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\project\cpp\hmm_forward\hmm_forward_clear\basic.cpp(94): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\project\cpp\hmm_forward\hmm_forward_clear\basic.cpp(104): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\project\cpp\hmm_forward\hmm_forward_clear\basic.cpp(106): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\project\cpp\hmm_forward\hmm_forward_clear\basic.cpp(119): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\project\cpp\hmm_forward\hmm_forward_clear\basic.cpp(146): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\project\cpp\hmm_forward\hmm_forward_clear\basic.cpp(147): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\project\cpp\hmm_forward\hmm_forward_clear\basic.cpp(154): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\project\cpp\hmm_forward\hmm_forward_clear\basic.cpp(169): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
        Link:
          D:\worksoftw\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\project\cpp\hmm_forward\Debug\hmm_forward_clear.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\project\cpp\hmm_forward\Debug\hmm_forward_clear.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\project\cpp\hmm_forward\Debug\hmm_forward_clear.lib" /MACHINE:X86 Debug\basic.obj
          Debug\main.obj
@@ -19,4 +36,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.02
+Time Elapsed 00:00:06.94

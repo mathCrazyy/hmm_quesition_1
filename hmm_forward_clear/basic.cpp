@@ -79,6 +79,49 @@ vector<float> forward_proba(vector<float> init_prob, vector<vector<float>> trans
 }
 
 
+float forward_proba_for(vector<float> init_prob, vector<vector<float>> transition, vector<vector<float>> emmision,
+	vector<int> watch_value,
+	vector<float> hidden_probs){
+
+	if (watch_value.size() == 0){
+		return 0;
+	}
+	for (int watch_index = 0; watch_index < watch_value.size(); watch_index++){
+		//当前状态下通过一定概率出来的 观测值
+		int in_emmision_watch_value = watch_value[watch_index];
+
+		if (watch_index == 0){
+			for (int i = 0; i < init_prob.size(); i++){
+				cout << init_prob[i] << " * " << emmision[i][in_emmision_watch_value] << endl;
+				//初始概率（各个隐状态）*被选中的状态下的发射概率（发射为当前观测值的概率）
+				hidden_probs.push_back(init_prob[i] * emmision[i][in_emmision_watch_value]);
+			}
+			init_prob = hidden_probs;
+		}
+		else{
+			vector<float> new_hidden_probs;
+
+			for (int tran = 0; tran < transition.size(); tran++){//每个状态都可能在目前的基础上，达到某个观测状态的目标
+				float pre_current_prob = 0.0;
+				for (int i = 0; i < hidden_probs.size(); i++){
+					cout << hidden_probs[i] << " * " << transition[i][tran] << endl;//在i状态上，转向第tran个状态的概率
+					pre_current_prob += hidden_probs[i] * transition[i][tran];
+
+				}
+				cout << emmision[tran][in_emmision_watch_value] << endl;//第tran个状态的发射概率
+				new_hidden_probs.push_back(pre_current_prob*emmision[tran][in_emmision_watch_value]);
+			}
+
+			hidden_probs = new_hidden_probs;
+		}
+	}
+	float all_prob = 0.0;
+	for (int i = 0; i < hidden_probs.size(); i++){
+		all_prob += hidden_probs[i];
+	}
+	return all_prob;
+}
+
 
 vector<int> split_1(const std::string &text, char sep) {
 	std::vector<int> tokens;

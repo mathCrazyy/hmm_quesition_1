@@ -87,7 +87,9 @@ int main(){
 	}
 	cout << "all_prob: " << all_prob << endl;
 
-
+	//前向算法求解...上一个..竟然把for循环写成了递归...尴尬..
+	float res=forward_proba_for(pi, transition_matrix, emmision_matrix, watch_value_vis, hidden_probs_force);
+	cout << "res: " << res << endl;
 
 	system("pause");
 	return 0;

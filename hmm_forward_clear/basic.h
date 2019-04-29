@@ -14,6 +14,10 @@ float force_proba(vector<float> init_prob, vector<vector<float>> transition, vec
 vector<float> forward_proba(vector<float> init_prob, vector<vector<float>> transition, vector<vector<float>> emmision,
 	vector<int> watch_value,
 	vector<float> hidden_probs, int current_epoch);
+//https://blog.csdn.net/u012421852/article/details/80186754  上一个是递归了...直接内部for循环即可。
+float forward_proba_for(vector<float> init_prob, vector<vector<float>> transition, vector<vector<float>> emmision,
+	vector<int> watch_value,
+	vector<float> hidden_probs);
 
 //可重复的全排列
 vector<string> get_group(vector<string> &basic_ele, vector<string>& route, int current_epoch, int seq_len);
